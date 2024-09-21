@@ -1,0 +1,121 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://cdn.dribbble.com/users/673549/screenshots/3159371/videogamecontroller_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+h1{
+    font-size: 45px;
+    color: hsl(332, 84%, 54%);
+}
+.signs{
+    margin-bottom: 50px;
+}
+.signs button{
+    margin: 0 10px;
+    font-size: 80px;
+    background-color: hsl(200, 100%, 50%);
+    min-width: 130px;
+    border-radius: 200px;
+    cursor: pointer;
+    border: none;
+}
+.signs button:hover{
+    background-color: hsl(0, 100%, 70%);
+}
+.signs button:active{
+    background-color: hsl(200, 100%, 50%);
+}
+#playerDisplay{
+    font-size: 25px;
+    color: wheat;
+}
+#computerDisplay{
+    font-size: 25px;
+    color: wheat;
+}
+#resultDisplay{
+    font-size: 50px;
+    margin: 30px 0px;
+}
+.greenText, #playerScoreDisplay{
+    color: hsl(150, 100%, 62%);
+}
+.redText, #computerScoreDisplay{
+    color: hsl(0, 100%, 55%);
+}
+.yellowText, #tieScoreDisplay{
+    color: hsl(36, 100%, 51%);
+}
+.scoreDisplay{
+    font-size: 16px;
+    color: wheat;
+    margin-bottom: 8px;
+
+}
+@media (max-width:768px){
+    h1{
+        font-size: 20px;
+        
+    }
+    .signs button{
+        margin-top: 15px;
+        font-size: 60px;
+        min-width: 100px;
+    }
+    #playerDisplay{
+        font-size: 22px;
+    }
+    #computerDisplay{
+        font-size: 22px;
+    }
+    #resultDisplay{
+        font-size: 40px;
+    }
+}
+@media (max-width:425px){
+    h1{
+        font-size: 25px;
+        
+    }
+    .signs button{
+        margin-top: 15px;
+        font-size: 50px;
+        min-width: 80px;
+    }
+    #playerDisplay{
+        font-size: 20px;
+    }
+    #computerDisplay{
+        font-size: 20px;
+    }
+    #resultDisplay{
+        font-size: 40px;
+    }
+}
+@media (max-width:320px){
+    h1{
+        font-size: 20px;
+        
+    }
+    .signs button{
+        margin-top: 15px;
+        font-size: 40px;
+        min-width: 70px;
+    }
+    #playerDisplay{
+        font-size: 18px;
+    }
+    #computerDisplay{
+        font-size: 18px;
+    }
+    #resultDisplay{
+        font-size: 30px;
+    }
+}
